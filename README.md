@@ -23,9 +23,8 @@ The directory `01_fig_generic/` contains the standard C++ implementation used to
 
 The following [video](assets/use_code_01_fig_generic.mp4) describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
 
-[![](assets/use_code_01_fig_generic.jpg)](assets/use_code_01_fig_generic.mp4)
 
-<img src="assets/use_code_01_fig_generic.jpg" alt="" width="400px"/>
+<a href="assets/use_code_01_fig_generic.mp4"><img src="assets/use_code_01_fig_generic.jpg" alt="" width="500px"/></a>
 
 
 ### GPU - Fig11/Cthulhu
