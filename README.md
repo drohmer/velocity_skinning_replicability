@@ -1,5 +1,11 @@
 # Velocity Skinning code replicability
 
+## Introduction
+
+This repository provides the codes used to reproduce the results shown in the following paper: _Velocity Skinning for Real-time Stylized Skeletal Animation. Damien Rohmer, Marco Tarini, Niranjan Kaylyanasyndaram, Faezeh Moshfeghifar, Marie-Paule Cani, Victor Zordan. Eurographics, Computer Graphics Forum vol.40, n.2, 2021._
+
+A project webpage associated to this article is available at: [https://velocityskinning.com](https://velocityskinning.com).
+
 
 ## Compilation
 
@@ -141,3 +147,21 @@ The directory `04_dragon_web/` contains the web implementation that was used to 
 * The webpage may need a server (ex. python3 -m  http.server) to load the mesh files.
 * A hosted version is available at [https://velocityskinning.com/web_demo/index.html](https://velocityskinning.com/web_demo/index.html).
 
+
+
+
+## Citation
+
+```bibtex
+@article{velocityskinning2021,
+title={},
+author={},
+journal={},
+year={},
+publisher={}
+}
+```
+
+## License
+
+The code is released under MIT License. See LICENSE for details.
