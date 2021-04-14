@@ -3,9 +3,9 @@
 - [Introduction](#Introduction)
 - [Code use](#CodeUse)
   - [Camera control](#CameraControl) 
-  - [[01_fig_generic](#GenericCode)], [[02_fig_11_gpu](#GPUCthulhu)], [03_fig_teaser_cow_meadow](#GPUCows), [04_dragon_web](#Web)
+  - [[01_fig_generic](#GenericCode)], [[02_fig_11_gpu](#GPUCthulhu)], [[03_fig_teaser_cow_meadow](#GPUCows)], [[04_dragon_web](#Web)]
 - [Compilation](#Compilation)
-  - [Linux](#Linux), [Windows](#Windows)
+  - [[Linux](#Linux)], [[Windows](#Windows)]
 - [Citation](#Citation)
 - [License](#License)
 
