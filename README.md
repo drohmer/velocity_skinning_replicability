@@ -86,21 +86,21 @@ _If successfull, a build/ directory is created and contains the file **pgm.sln**
 * Right click on Solution 'projectName' (Solution 'sample_code' in the sample code) and select **Properties**
 * Change the value of `Single startup project` to `pgm` (this sets Visual Studio to compile the current project instead of a generic "All_BUILD" empty project).
 
-!assets/02_pgm_build.jpg[]
+![](assets/02_pgm_build.jpg)
 
 **In the top toolbar**
 
 * Change the build type from 'Debug' to '**RelWithDebInfo**' (this allows to have optimal runtime performance, while preserving debug information).
 
-!assets/03_RelWithDebInfo.jpg[]
+![](assets/03_RelWithDebInfo.jpg)
 
 * In **Local Windows Debugger**, select 'projectName Debug Properties'.
 * In the General properties (selected by default) change the value of **Output Directory** in removing the directory 'build\RelWithDebInfo\' from the path (the end of the pathname)
   * _(As a result, the executable `pgm.exe` will be generated in the root directory of the project instead of a build\RelWithDebInfo\ subdirectory)._
 
-!assets/04_local_windows_debugger.jpg[]
+![](assets/04_local_windows_debugger.jpg)
 
-!assets/05_output_directory.jpg[]
+![](assets/05_output_directory.jpg)
 
 * In the **Debugging** property change the value of **Working Directory** from $(ProjectDir) to **$(TargetDir)**
 
