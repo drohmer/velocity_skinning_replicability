@@ -31,7 +31,7 @@ The following [video](assets/use_code_01_fig_generic.mp4) describes the use of t
 
 The directory `02_fig11_gpu/` contains the GPU implementation set to display the Cthulhu character in looping animation.
 
-<img src="assets/use_code_02_fig11_gpu.jpg" alt="" width="500px"/>
+<img src="assets/use_code_02_fig_11_gpu.jpg" alt="" width="500px"/>
 
 ### GPU - Teaser/Cows
 
