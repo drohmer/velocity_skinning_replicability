@@ -1,0 +1,6 @@
+Control of the camera:
+- left click + mouse drag: rotation
+- right click + mouse drag: zoom
+- CTRL + left click + mouse drag: pan
+- CTRL + right click + mouse drag: translation forward/backward
+- SHIFT + left click on a joint: joint selection (followed by mouse drag to articlate it)

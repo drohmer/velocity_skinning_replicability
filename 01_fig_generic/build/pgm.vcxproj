@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36C1CC9C-F9E0-3919-B51E-57DB26EEE6FF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>pgm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pgm.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pgm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pgm.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pgm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pgm.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pgm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pgm.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pgm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib_windows\glfw3_win\lib\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/Debug/pgm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/Debug/pgm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib_windows\glfw3_win\lib\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/Release/pgm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/Release/pgm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib_windows\glfw3_win\lib\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/MinSizeRel/pgm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/MinSizeRel/pgm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;SOLUTION;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\lib_windows\glfw3_win\include;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\.;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib_windows\glfw3_win\lib\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/RelWithDebInfo/pgm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/RelWithDebInfo/pgm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic -BC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build --check-stamp-file C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCXXCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeRCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic -BC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build --check-stamp-file C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCXXCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeRCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic -BC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build --check-stamp-file C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCXXCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeRCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic -BC:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build --check-stamp-file C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeCXXCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeRCCompiler.cmake;C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\3.20.0-rc3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\main\helper_scene\helper_scene.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\main\helper_scene\helper_scene.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\main\main.cpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\base\base.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\base\base.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\current_scene.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\scenes.hpp" />
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\curve\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\curve\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\depth_map\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\depth_map\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\mesh\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\mesh\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\mesh_back_illumination\mesh.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\mesh_back_illumination\mesh.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\mesh_shadow\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\mesh_shadow\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\normals\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\normals\shader.geom.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\normals\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\segment_immediate_mode\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\segment_immediate_mode\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\wireframe\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\wireframe\shader.geom.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\wireframe\shader.vert.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\wireframe_quads\shader.frag.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\wireframe_quads\shader.geom.glsl">
+    </None>
+    <None Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\shared_assets\shaders\wireframe_quads\shader.vert.glsl">
+    </None>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\sources_scenes.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\helper_skeleton.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\helper_skeleton.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\helper_skinning.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\helper_skinning.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\helper_velocity_skinning.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\helper_velocity_skinning.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\quaternion.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\quaternion.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\skinning.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\skinning.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\skinning_loader.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\skinning_loader.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\velocity_tracker.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\scenes\sources\squashy_skinning\velocity_tracker.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Cholesky\LDLT.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Cholesky\LLT.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Cholesky\LLT_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\CholmodSupport\CholmodSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Array.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\ArrayBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\ArrayWrapper.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Assign.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\AssignEvaluator.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Assign_MKL.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\BandMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Block.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\BooleanRedux.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CommaInitializer.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\ConditionEstimator.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CoreEvaluators.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CoreIterators.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CwiseBinaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CwiseNullaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CwiseTernaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CwiseUnaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\CwiseUnaryView.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\DenseBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\DenseCoeffsBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\DenseStorage.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Diagonal.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\DiagonalMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\DiagonalProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Dot.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\EigenBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\ForceAlignedAccess.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Fuzzy.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\GeneralProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\GenericPacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\GlobalFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\IO.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Inverse.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Map.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\MapBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\MathFunctionsImpl.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Matrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\MatrixBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\NestByValue.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\NoAlias.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\NumTraits.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\PermutationMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\PlainObjectBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Product.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\ProductEvaluators.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Random.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Redux.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Ref.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Replicate.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\ReturnByValue.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Reverse.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Select.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\SelfAdjointView.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\SelfCwiseBinaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Solve.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\SolveTriangular.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\SolverBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\StableNorm.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Stride.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Swap.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Transpose.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Transpositions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\TriangularMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\VectorBlock.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\VectorwiseOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\Visitor.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AVX\Complex.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AVX\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AVX\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AVX\TypeCasting.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AVX512\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AVX512\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AltiVec\Complex.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AltiVec\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\AltiVec\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\CUDA\Complex.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\CUDA\Half.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\CUDA\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\CUDA\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\CUDA\PacketMathHalf.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\CUDA\TypeCasting.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\Default\ConjHelper.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\Default\Settings.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\NEON\Complex.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\NEON\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\NEON\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\SSE\Complex.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\SSE\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\SSE\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\SSE\TypeCasting.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\ZVector\Complex.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\ZVector\MathFunctions.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\arch\ZVector\PacketMath.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\functors\AssignmentFunctors.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\functors\BinaryFunctors.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\functors\NullaryFunctors.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\functors\StlFunctors.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\functors\TernaryFunctors.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\functors\UnaryFunctors.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralBlockPanelKernel.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralMatrixMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralMatrixMatrixTriangular.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralMatrixMatrixTriangular_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralMatrixMatrix_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralMatrixVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\GeneralMatrixVector_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\Parallelizer.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\SelfadjointMatrixMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\SelfadjointMatrixMatrix_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\SelfadjointMatrixVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\SelfadjointMatrixVector_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\SelfadjointProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\SelfadjointRank2Update.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularMatrixMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularMatrixMatrix_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularMatrixVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularMatrixVector_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularSolverMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularSolverMatrix_BLAS.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\products\TriangularSolverVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\BlasUtil.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\Constants.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\DisableStupidWarnings.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\ForwardDeclarations.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\MKL_support.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\Macros.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\Memory.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\Meta.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\NonMPL2.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\ReenableStupidWarnings.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\StaticAssert.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Core\util\XprHelper.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\ComplexEigenSolver.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\ComplexSchur.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\ComplexSchur_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\EigenSolver.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\GeneralizedEigenSolver.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\GeneralizedSelfAdjointEigenSolver.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\HessenbergDecomposition.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\MatrixBaseEigenvalues.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\RealQZ.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\RealSchur.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\RealSchur_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\SelfAdjointEigenSolver.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\SelfAdjointEigenSolver_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Eigenvalues\Tridiagonalization.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\AlignedBox.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\AngleAxis.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\EulerAngles.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Homogeneous.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Hyperplane.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\OrthoMethods.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\ParametrizedLine.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Quaternion.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Rotation2D.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\RotationBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Scaling.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Transform.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Translation.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\Umeyama.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Geometry\arch\Geometry_SSE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Householder\BlockHouseholder.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Householder\Householder.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Householder\HouseholderSequence.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\BasicPreconditioners.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\BiCGSTAB.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\ConjugateGradient.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\IncompleteCholesky.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\IncompleteLUT.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\IterativeSolverBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\LeastSquareConjugateGradient.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\IterativeLinearSolvers\SolveWithGuess.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\Jacobi\Jacobi.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\LU\Determinant.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\LU\FullPivLU.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\LU\InverseImpl.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\LU\PartialPivLU.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\LU\PartialPivLU_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\LU\arch\Inverse_SSE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\MetisSupport\MetisSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\OrderingMethods\Amd.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\OrderingMethods\Eigen_Colamd.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\OrderingMethods\Ordering.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\PaStiXSupport\PaStiXSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\PardisoSupport\PardisoSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\QR\ColPivHouseholderQR.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\QR\ColPivHouseholderQR_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\QR\CompleteOrthogonalDecomposition.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\QR\FullPivHouseholderQR.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\QR\HouseholderQR.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\QR\HouseholderQR_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SPQRSupport\SuiteSparseQRSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SVD\BDCSVD.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SVD\JacobiSVD.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SVD\JacobiSVD_LAPACKE.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SVD\SVDBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SVD\UpperBidiagonalization.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCholesky\SimplicialCholesky.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCholesky\SimplicialCholesky_impl.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\AmbiVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\CompressedStorage.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\ConservativeSparseSparseProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\MappedSparseMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseAssign.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseBlock.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseColEtree.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseCompressedBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseCwiseBinaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseCwiseUnaryOp.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseDenseProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseDiagonalProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseDot.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseFuzzy.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseMap.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseMatrixBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparsePermutation.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseProduct.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseRedux.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseRef.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseSelfAdjointView.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseSolverBase.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseSparseProductWithPruning.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseTranspose.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseTriangularView.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseUtil.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\SparseView.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseCore\TriangularSolver.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLUImpl.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_Memory.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_Structs.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_SupernodalMatrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_Utils.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_column_bmod.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_column_dfs.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_copy_to_ucol.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_gemm_kernel.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_heap_relax_snode.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_kernel_bmod.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_panel_bmod.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_panel_dfs.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_pivotL.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_pruneL.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseLU\SparseLU_relax_snode.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SparseQR\SparseQR.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\StlSupport\StdDeque.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\StlSupport\StdList.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\StlSupport\StdVector.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\StlSupport\details.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\SuperLUSupport\SuperLUSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\UmfPackSupport\UmfPackSupport.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\Image.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\Kernel.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\RealSvd2x2.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\blas.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\lapack.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\lapacke.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\misc\lapacke_mangling.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\ArrayCwiseBinaryOps.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\ArrayCwiseUnaryOps.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\BlockMethods.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\CommonCwiseBinaryOps.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\CommonCwiseUnaryOps.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\MatrixCwiseBinaryOps.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\eigen\Eigen\src\plugins\MatrixCwiseUnaryOps.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glad\include\glad\glad.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glad\src\glad.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\_features.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\_fixes.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\_noise.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\_swizzle.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\_swizzle_func.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\_vectorize.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\compute_common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\compute_vector_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\qualifier.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\setup.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_float.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_half.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat2x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat2x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat2x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat3x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat3x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat3x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat4x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat4x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_mat4x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_quat.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_vec1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_vec2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_vec3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\detail\type_vec4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\exponential.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_clip_space.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double2x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double2x2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double2x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double2x3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double2x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double2x4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double3x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double3x2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double3x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double3x3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double3x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double3x4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double4x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double4x2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double4x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double4x3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double4x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_double4x4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float2x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float2x2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float2x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float2x3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float2x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float2x4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float3x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float3x2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float3x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float3x3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float3x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float3x4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float4x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float4x2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float4x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float4x3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float4x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_float4x4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_projection.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\matrix_transform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_double.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_double_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_exponential.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_float.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_float_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_geometric.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_transform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\quaternion_trigonometric.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_constants.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_int_sized.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_integer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_uint_sized.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\scalar_ulp.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool1_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_bool4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double1_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_double4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float1_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_float4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int1_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_int4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_integer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint1_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint2_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint3_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_uint4_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\ext\vector_ulp.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\fwd.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\geometric.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\glm.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\bitfield.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\color_space.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\constants.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\epsilon.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\integer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\matrix_access.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\matrix_integer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\matrix_inverse.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\matrix_transform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\noise.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\packing.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\quaternion.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\random.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\reciprocal.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\round.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\type_aligned.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\type_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\type_ptr.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\ulp.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtc\vec1.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\associated_min_max.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\bit.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\closest_point.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\color_encoding.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\color_space.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\color_space_YCoCg.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\common.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\compatibility.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\component_wise.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\dual_quaternion.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\easing.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\euler_angles.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\extend.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\extended_min_max.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\exterior_product.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\fast_exponential.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\fast_square_root.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\fast_trigonometry.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\functions.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\gradient_paint.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\handed_coordinate_space.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\hash.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\integer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\intersect.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\io.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\log_base.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_cross_product.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_decompose.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_factorisation.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_interpolation.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_major_storage.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_operation.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_query.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\matrix_transform_2d.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\mixed_product.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\norm.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\normal.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\normalize_dot.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\number_precision.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\optimum_pow.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\orthonormalize.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\perpendicular.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\polar_coordinates.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\projection.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\quaternion.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\range.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\raw_data.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\rotate_normalized_axis.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\rotate_vector.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\scalar_multiplication.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\scalar_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\spline.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\std_based_type.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\string_cast.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\texture.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\transform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\transform2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\type_aligned.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\type_trait.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\vec_swizzle.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\vector_angle.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\vector_query.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\gtx\wrap.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\integer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat2x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat2x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat2x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat3x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat3x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat3x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat4x2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat4x3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\mat4x4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\matrix.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\packing.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\common.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\exponential.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\geometric.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\integer.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\matrix.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\neon.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\packing.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\platform.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\trigonometric.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\simd\vector_relational.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\trigonometric.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\vec2.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\vec3.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\vec4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\glm\vector_relational.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imconfig.h" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui.cpp">
+      <ObjectFileName>$(IntDir)/third_party/imgui/imgui.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui.h" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_demo.cpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_impl_glfw.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_impl_glfw.h" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_impl_opengl3.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_internal.h" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imgui_widgets.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imstb_rectpack.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imstb_textedit.h" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\imgui\imstb_truetype.h" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\lodepng\lodepng.cpp">
+      <ObjectFileName>$(IntDir)/third_party/lodepng/lodepng.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\lodepng\lodepng.h" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\simplexnoise\simplexnoise1234.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\third_party\simplexnoise\simplexnoise1234.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\base.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\basic_types\basic_types.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\basic_types\basic_types.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\error\error.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\error\error.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\file\file.cpp">
+      <ObjectFileName>$(IntDir)/vcl/base/file/file.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\file\file.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\rand\rand.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\rand\rand.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\stl\stl.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\string\string.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\string\string.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\base\types\types.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\buffer\buffer.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\buffer\buffer\buffer.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\buffer\buffer\buffer.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\buffer\buffer2D\buffer2D.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\buffer\buffer3D\buffer3D.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\buffer_stack\buffer_stack.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\containers\containers.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\camera\camera.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\camera\camera.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\camera_control_glfw\camera_control_glfw.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\camera_control_glfw\camera_control_glfw.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\interaction.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\info\picking_info.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\info\picking_info.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\picking.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\primitives\picking_primitives.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\primitives\picking_primitives.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\ray\picking_ray.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\picking\ray\picking_ray.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\screen_motion\screen_motion.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\screen_motion\screen_motion.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\time_period\time_period.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\time_period\time_period.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\time_slider\time_slider.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\interaction\time_slider\time_slider.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\helper_functions\helper_functions.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\helper_functions\linspace\linspace.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\helper_functions\linspace\linspace.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\helper_functions\norm\norm.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\helper_functions\norm\norm.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat\mat.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat2\mat2.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat2\mat2.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat3\mat3.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat3\mat3.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat4\mat4.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\mat\mat4\mat4.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\math.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\transformation\affine_transform\affine_transform.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\transformation\affine_transform\affine_transform.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\transformation\special_transform\special_transform.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\transformation\special_transform\special_transform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\transformation\transformation.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec\vec.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec2\vec2.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec2\vec2.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec3\vec3.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec3\vec3.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec4\vec4.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\math\vec\vec4\vec4.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\debug\opengl_debug.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\debug\opengl_debug.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\opengl.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\shader\shader.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\shader\shader.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\texture\image\image.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\texture\image\image.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\texture\texture.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\texture\texture_gpu\texture_gpu.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\texture\texture_gpu\texture_gpu.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\uniform\uniform.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\opengl\uniform\uniform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_drawable\curve_drawable.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_drawable\curve_drawable.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_drawable\curve_drawable_uniform\curve_drawable_uniform.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_dynamic_drawable\curve_dynamic_drawable.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_dynamic_drawable\curve_dynamic_drawable.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_gpu\curve_gpu.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_gpu\curve_gpu.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_primitive\curve_primitive.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\curve\curve_primitive\curve_primitive.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh_drawable\hierarchy_mesh_drawable.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh_drawable\hierarchy_mesh_drawable.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh_drawable\hierarchy_mesh_drawable_display_skeleton\hierarchy_mesh_drawable_display_skeleton.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh_drawable\hierarchy_mesh_drawable_display_skeleton\hierarchy_mesh_drawable_display_skeleton.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\hierarchy_mesh\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_drawable\mesh_drawable.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_drawable\mesh_drawable.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_drawable\mesh_drawable_gpu_data\mesh_drawable_gpu_data.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_drawable\mesh_drawable_gpu_data\mesh_drawable_gpu_data.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_drawable\mesh_drawable_uniform\mesh_drawable_uniform.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_drawable\mesh_drawable_uniform\mesh_drawable_uniform.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_loader\mesh_loader.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_loader\obj\obj.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_loader\obj\obj.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_primitive\mesh_primitive.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_primitive\mesh_primitive.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_structure\mesh.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\mesh\mesh_structure\mesh.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segment.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segment_drawable_immediate_mode\segment_drawable_immediate_mode.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segment_drawable_immediate_mode\segment_drawable_immediate_mode.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segments_drawable\segments_drawable.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segments_drawable\segments_drawable.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segments_drawable\segments_drawable_uniform\segments_drawable_uniform.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segments_drawable\segments_drawable_uniform\segments_drawable_uniform.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segments_gpu\segments_gpu.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\segment\segments_gpu\segments_gpu.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\shape\shape.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\unit_test\unit_test.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\unit_test\unit_test.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\vcl.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glad\glad.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\events\events.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\events\events.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\fps_counter\fps_counter.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\fps_counter\fps_counter.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\glfw.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\window\window.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\glfw\window\window.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\imgui\imgui.cpp">
+      <ObjectFileName>$(IntDir)/vcl/wrapper/imgui/imgui.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\imgui\imgui.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\lodepng\lodepng.cpp">
+      <ObjectFileName>$(IntDir)/vcl/wrapper/lodepng/lodepng.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\lodepng\lodepng.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\perlin\perlin.cpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\perlin\perlin.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl\wrapper\wrapper.hpp" />
+    <ClCompile Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl_advanced\file\file.cpp">
+      <ObjectFileName>$(IntDir)/vcl_advanced/file/file.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl_advanced\file\file.hpp" />
+    <ClInclude Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\vcl_advanced\vcl_advanced.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\ZERO_CHECK.vcxproj">
+      <Project>{A8917D7E-ED64-3471-88B8-A529CD0219A8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

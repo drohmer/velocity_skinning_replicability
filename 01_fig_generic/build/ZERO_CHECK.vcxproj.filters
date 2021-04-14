@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Dropbox\drive\research\2020_squashy_skinning\2020_squashy_skinning\replicability\01_fig_generic\build\CMakeFiles\81d4a3a6f280a7eb033c1fd9574a9e38\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{20726023-C2DD-33A6-A5BC-7315E6BED42C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
