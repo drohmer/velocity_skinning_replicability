@@ -1,5 +1,15 @@
 # Velocity Skinning code replicability
 
+- [Introduction](#Introduction)
+- [Code use](#CodeUse)
+- [Compilation](#Compilation)
+  - [Linux](#Linux)
+  - [Windows](#Windows)
+- [Citation](#Citation)
+- [License](#License)
+
+
+<a name="Introduction"></a>
 ## Introduction
 
 This repository provides the codes used to reproduce the results shown in the following paper: _**Velocity Skinning for Real-time Stylized Skeletal Animation**. Damien Rohmer, Marco Tarini, Niranjan Kaylyanasyndaram, Faezeh Moshfeghifar, Marie-Paule Cani, Victor Zordan. Eurographics, Computer Graphics Forum vol.40, n.2, 2021._
@@ -7,7 +17,9 @@ This repository provides the codes used to reproduce the results shown in the fo
 A project webpage associated to this article is available at: [https://velocityskinning.com](https://velocityskinning.com).
 
 
+<a name="CodeUse"></a>
 ## Code use
+
 
 ### Camera control and interaction
 
@@ -17,7 +29,8 @@ A project webpage associated to this article is available at: [https://velocitys
 - CTRL + right click + mouse drag: translation forward/backward
 - SHIFT + left click on a joint: joint selection (followed by mouse drag to articlate it)
 
-### Generic images
+
+### Generic code
 
 The directory `01_fig_generic/` contains the standard C++ implementation used to generate most of the illustrative images didn't requiering GPU acceleration.
 
@@ -27,13 +40,13 @@ The following [video](assets/use_code_01_fig_generic.mp4) describes the use of t
 <a href="assets/use_code_01_fig_generic.mp4"><img src="assets/use_code_01_fig_generic.jpg" alt="" width="500px"/></a>
 
 
-### GPU - Fig11/Cthulhu
+### GPU Cthulhu - Fig11
 
 The directory `02_fig11_gpu/` contains the GPU implementation set to display the Cthulhu character in looping animation.
 
 <img src="assets/use_code_02_fig_11_gpu.jpg" alt="" width="500px"/>
 
-### GPU - Teaser/Cows
+### GPU Cows - Fig Teaser
 
 The directory `03_fig_teaser_cow_meadow/` contains the GPU implementation set to display the meadow of cows corresponding to the right-side of the teaser image.
 
@@ -49,8 +62,10 @@ The directory `04_dragon_web/` contains the web implementation that was used to 
 
 <img src="assets/use_code_04_web.jpg" alt="" width="500px"/>
 
+<a name="Compilation"></a>
 ## Compilation
 
+<a name="Linux"></a>
 ### Linux
 
 #### External dependencies
@@ -78,7 +93,7 @@ __Ex. to compile the code in directory `01_fig_generic/` (and others) using the 
 
 ```shell
 make
-./pgm
+./scene
 ```
 
 
@@ -108,6 +123,7 @@ cd ..
 build/sample_code 
 ```
 
+<a name="Windows"></a>
 ### Windows
 
 Method to compile with Visual Studio 2019 and CMake the code in directory `01_fig_generic/` (similar operations for 02_fig_11_gpu and 03_fig_teaser_cow_meadow).
@@ -140,14 +156,14 @@ _If successfull, a build/ directory is created and contains the file **pgm.sln**
 
 * Change the build type from 'Debug' to '**RelWithDebInfo**' (this allows to have optimal runtime performance, while preserving debug information).
 
-<img src="assets/03_RelWithDebInfo.jpg" alt="" width="400px"/>
+<img src="assets/03_RelWithDebInfo.jpg" alt="" width="450px"/>
 
 * In **Local Windows Debugger**, select 'projectName Debug Properties'.
 * In the General properties (selected by default) change the value of **Output Directory** in removing the directory 'build\RelWithDebInfo\' from the path (the end of the pathname)
   * _(As a result, the executable `pgm.exe` will be generated in the root directory of the project instead of a build\RelWithDebInfo\ subdirectory)._
 
 <img src="assets/04_local_windows_debugger.jpg" alt="" width="400px"/>
-<img src="assets/05_output_directory.jpg" alt="" width="400px"/>
+<img src="assets/05_output_directory.jpg" alt="" width="450px"/>
 
 
 * In the **Debugging** property change the value of **Working Directory** from $(ProjectDir) to **$(TargetDir)**
@@ -157,7 +173,7 @@ _If successfull, a build/ directory is created and contains the file **pgm.sln**
 
 
 
-
+<a name="Citation"></a>
 ## Citation
 
 ```bibtex
@@ -171,6 +187,7 @@ year={2021},
 }
 ```
 
+<a name="License"></a>
 ## License
 
 The code is released under MIT License. See LICENSE for details.
