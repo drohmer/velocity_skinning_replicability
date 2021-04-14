@@ -105,3 +105,21 @@ _If successfull, a build/ directory is created and contains the file **pgm.sln**
 * In the **Debugging** property change the value of **Working Directory** from $(ProjectDir) to **$(TargetDir)**
 
 * The project should now be ready to be compiled and run.
+
+## Usage
+
+### Camera control and interaction
+
+- left click + mouse drag: rotation
+- right click + mouse drag: zoom
+- CTRL + left click + mouse drag: pan
+- CTRL + right click + mouse drag: translation forward/backward
+- SHIFT + left click on a joint: joint selection (followed by mouse drag to articlate it)
+
+### Generic images
+
+The directory `01_fig_generic/` contains the standard C++ implementation used to generate most of the illustrative images didn't requiering GPU acceleration.
+
+This video describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
+
+![](use_code_01_fig_generic.mp4)
