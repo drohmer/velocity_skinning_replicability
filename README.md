@@ -21,7 +21,7 @@ A project webpage associated to this article is available at: [https://velocitys
 
 The directory `01_fig_generic/` contains the standard C++ implementation used to generate most of the illustrative images didn't requiering GPU acceleration.
 
-The following [video](assets/use_code_01_fig_generic.mp4) describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
+The following [video](assets/use_code_01_fig_generic.mp4) describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the demonstration video.
 
 
 <a href="assets/use_code_01_fig_generic.mp4"><img src="assets/use_code_01_fig_generic.jpg" alt="" width="500px"/></a>
@@ -31,9 +31,13 @@ The following [video](assets/use_code_01_fig_generic.mp4) describes the use of t
 
 The directory `02_fig11_gpu/` contains the GPU implementation set to display the Cthulhu character in looping animation.
 
+<img src="assets/use_code_02_fig11_gpu.jpg" alt="" width="500px"/>
+
 ### GPU - Teaser/Cows
 
 The directory `03_fig_teaser_cow_meadow/` contains the GPU implementation set to display the meadow of cows corresponding to the right-side of the teaser image.
+
+<img src="assets/use_code_03_fig_teaser_cow_meadow.jpg" alt="" width="500px"/>
 
 ### Web - Fig12/Dragon
 
@@ -43,6 +47,7 @@ The directory `04_dragon_web/` contains the web implementation that was used to 
 * The webpage may need a server (ex. python3 -m  http.server) to load the mesh files.
 * A hosted version is available at [https://velocityskinning.com/web_demo/index.html](https://velocityskinning.com/web_demo/index.html).
 
+<img src="assets/use_code_04_web.jpg" alt="" width="500px"/>
 
 ## Compilation
 
