@@ -1,3 +1,0 @@
-C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/pgm.dir
-C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/ALL_BUILD.dir
-C:/Dropbox/drive/research/2020_squashy_skinning/2020_squashy_skinning/replicability/01_fig_generic/build/CMakeFiles/ZERO_CHECK.dir

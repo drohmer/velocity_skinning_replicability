@@ -2,9 +2,10 @@
 
 - [Introduction](#Introduction)
 - [Code use](#CodeUse)
+  - [Camera control](#CameraControl) 
+  - [01_fig_generic](#GenericCode), [02_fig_11_gpu](#GPUCthulhu), [03_fig_teaser_cow_meadow](#GPUCows), [04_dragon_web](#Web)
 - [Compilation](#Compilation)
-  - [Linux](#Linux)
-  - [Windows](#Windows)
+  - [Linux](#Linux), [Windows](#Windows)
 - [Citation](#Citation)
 - [License](#License)
 
@@ -20,7 +21,7 @@ A project webpage associated to this article is available at: [https://velocitys
 <a name="CodeUse"></a>
 ## Code use
 
-
+<a name="CameraControl"></a>
 ### Camera control and interaction
 
 - left click + mouse drag: rotation
@@ -29,7 +30,7 @@ A project webpage associated to this article is available at: [https://velocitys
 - CTRL + right click + mouse drag: translation forward/backward
 - SHIFT + left click on a joint: joint selection (followed by mouse drag to articlate it)
 
-
+<a name="GenericCode"></a>
 ### Generic code
 
 The directory `01_fig_generic/` contains the standard C++ implementation used to generate most of the illustrative images didn't requiering GPU acceleration.
@@ -39,19 +40,21 @@ The following [video](assets/use_code_01_fig_generic.mp4) describes the use of t
 
 <a href="assets/use_code_01_fig_generic.mp4"><img src="assets/use_code_01_fig_generic.jpg" alt="" width="500px"/></a>
 
-
+<a name="GPUCthulhu"></a>
 ### GPU Cthulhu - Fig11
 
 The directory `02_fig11_gpu/` contains the GPU implementation set to display the Cthulhu character in looping animation.
 
 <img src="assets/use_code_02_fig_11_gpu.jpg" alt="" width="500px"/>
 
+<a name="GPUCows"></a>
 ### GPU Cows - Fig Teaser
 
 The directory `03_fig_teaser_cow_meadow/` contains the GPU implementation set to display the meadow of cows corresponding to the right-side of the teaser image.
 
 <img src="assets/use_code_03_fig_teaser_cow_meadow.jpg" alt="" width="500px"/>
 
+<a name="Web"></a>
 ### Web - Fig12/Dragon
 
 The directory `04_dragon_web/` contains the web implementation that was used to take the view of the dragon shown in Fig.12.
