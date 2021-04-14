@@ -120,5 +120,24 @@ _If successfull, a build/ directory is created and contains the file **pgm.sln**
 
 The directory `01_fig_generic/` contains the standard C++ implementation used to generate most of the illustrative images didn't requiering GPU acceleration.
 
-This [video](assets/use_code_01_fig_generic.mp4) describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
+The following [video](assets/use_code_01_fig_generic.mp4) describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
+
+[![](assets/use_code_01_fig_generic.jpg)](assets/use_code_01_fig_generic.mp4)
+
+
+### GPU - Fig11/Cthulhu
+
+The directory `02_fig11_gpu/` contains the GPU implementation set to display the Cthulhu character in looping animation.
+
+### GPU - Teaser/Cows
+
+The directory `03_fig_teaser_cow_meadow/` contains the GPU implementation set to display the meadow of cows corresponding to the right-side of the teaser image.
+
+### Web - Fig12/Dragon
+
+The directory `04_dragon_web/` contains the web implementation that was used to take the view of the dragon shown in Fig.12.
+
+* The code is fully implemented in JavaScript.
+* The webpage may need a server (ex. python3 -m  http.server) to load the mesh files.
+* A hosted version is available at [https://velocityskinning.com/web_demo/index.html](https://velocityskinning.com/web_demo/index.html).
 
