@@ -120,8 +120,5 @@ _If successfull, a build/ directory is created and contains the file **pgm.sln**
 
 The directory `01_fig_generic/` contains the standard C++ implementation used to generate most of the illustrative images didn't requiering GPU acceleration.
 
-This video describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
+This [video](assets/use_code_01_fig_generic.mp4) describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
 
-![](assets/use_code_01_fig_generic.jpg)
-
-[![](assets/use_code_01_fig_generic.jpg)](assets/use_code_01_fig_generic.mp4)
