@@ -122,4 +122,4 @@ The directory `01_fig_generic/` contains the standard C++ implementation used to
 
 This video describes the use of this code to generate most of the figures (such as Fig.4, 5, 9, and 10), and results shown in the video.
 
-![](use_code_01_fig_generic.mp4)
+[![](assets/use_code_01_fig_generic.jpg)](assets/use_code_01_fig_generic.mp4)
