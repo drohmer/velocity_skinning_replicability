@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository provides the codes used to reproduce the results shown in the following paper: _Velocity Skinning for Real-time Stylized Skeletal Animation. Damien Rohmer, Marco Tarini, Niranjan Kaylyanasyndaram, Faezeh Moshfeghifar, Marie-Paule Cani, Victor Zordan. Eurographics, Computer Graphics Forum vol.40, n.2, 2021._
+This repository provides the codes used to reproduce the results shown in the following paper: _**Velocity Skinning for Real-time Stylized Skeletal Animation**. Damien Rohmer, Marco Tarini, Niranjan Kaylyanasyndaram, Faezeh Moshfeghifar, Marie-Paule Cani, Victor Zordan. Eurographics, Computer Graphics Forum vol.40, n.2, 2021._
 
 A project webpage associated to this article is available at: [https://velocityskinning.com](https://velocityskinning.com).
 
